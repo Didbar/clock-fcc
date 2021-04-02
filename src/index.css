@@ -2,10 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+
+  user-select: none;
 }
 
 html {
   box-sizing: border-box;
+  font-size: 16px;
 }
 
 body {
@@ -14,9 +17,23 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(31, 235, 229);
+  background: radial-gradient(
+    circle,
+    rgba(31, 235, 229, 1) 0%,
+    rgba(53, 106, 184, 1) 100%
+  );
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+#root {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
